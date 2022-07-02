@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --desaturated-dark-blue: hsl(214, 17%, 51%);
+    --grayish-blue: hsl(212, 23%, 69%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+    font-size: 62.5%;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--light-grayish-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body > img {
+    height: 20rem;
+    width: 32.7rem;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.container {
+    position: relative;
+    background-color: white;
+    height: 31.5rem;
+    width: 32.7rem;
+    border-radius: 0 0 1rem 1rem;
+    padding: 4rem 4rem 2rem 3rem;
+}
+
+.container .title {
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--very-dark-grayish-blue);
+}
+
+.container .description {
+    margin-bottom: 3.2rem;
+    height: 9.3rem;
+    font-size: 1.3rem;
+    line-height: calc(9.3rem / 5);
+    color: var(--desaturated-dark-blue);
+}
+
+.footer {
+    height: 4rem;
+    width: 26.3rem;
+    display: flex;
+}
+
+.footer > img {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+}
+
+.footer .name-and-date {
+    display: flex;
+    flex-direction: column;
+    margin-top: .6rem;
+    padding-left: 1.6rem;
+    padding-right: 6rem;
+}
+
+.name-and-date #name {
+    color: var(--very-dark-grayish-blue);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.name-and-date #date {
+    color: var(--grayish-blue);
+    font-size: 1.2rem;
+}
+
+.share {
+    height: 3.2rem;
+    width: 3.2rem;
+    margin-top: .4rem;
+    border-radius: 50%;
+    background-color: var(--light-grayish-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.socials-share {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    width: 32.7rem;
+    height: 6.3rem;
+    background-color: var(--very-dark-grayish-blue);
+    border-radius: 0 0 1rem 1rem;
+}
+
+.socials-share span {
+    color: var(--desaturated-dark-blue);
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    letter-spacing: .5rem;
+    padding-left: 3.2rem;
+    padding-right: 2rem;
+}
+
+#facebook, #twitter, #pinterest {
+    width: 2rem;
+    height: 2rem;
+}
+
+#facebook, #twitter {
+    margin-right: 1.5rem;
+}
+
+#pinterest {
+    margin-right: 5.5rem;
+}
+
